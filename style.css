@@ -1,0 +1,67 @@
+body{
+  background-color: #038c73;
+  font-family: 'Trebuchet MS';
+}
+
+/*btn's set the background and border colors for buttons with these classes to green*/
+.btn-success {
+  background-color: #52d99a;
+  border-color: #52d99a;
+}
+
+.btn-primary {
+  background-color: #52d99a;
+  border-color: #52d99a;
+}
+
+.btn-secondary {
+  background-color: #52d99a;
+  border-color: #52d99a;
+}
+
+/*sets the background/border colors for buttons to a darker shade of green when the cursor hovers over*/
+.btn:hover {
+  background-color: #2dbb8b;
+  border-color: #2dbb8b;
+}
+
+/*sets a box shadow and darker background/border colors for buttons with the class when they receive focus.*/
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem #2dbb8b;
+  background-color: #2dbb8b;
+  border-color: #2dbb8b;
+}
+
+/*section bg color*/
+section {
+  background-color: #038c73;
+}
+
+/*login button*/
+.btn-outline-dark {
+  background-color: #52d99a;
+  border-color: #52d99a;
+  color: white;
+}
+
+/*changes link color to gold*/
+a {
+  color: darkgoldenrod;
+}
+
+/*changes link color when hovered over to green */
+a:hover {
+  color: seagreen;
+}
+
+.btn-cancel {
+  background-color: #d95b52;
+  border-color: #d95b52;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background-color: #b82218;
+  border-color: #b82218;
+  color: white;
+}

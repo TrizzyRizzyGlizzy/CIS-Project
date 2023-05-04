@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /*sets the height of the .h-custom class to 100% of the viewport height for screens with a 
+    minimum width of 1025 pixels*/
+    @media (min-width: 1025px) {
+      .h-custom {
+        height: 100vh !important;
+      }
+    }
+
+    /*sets the text alignment and font size for all paragraphs to center and smaller */
+    p {
+      text-align: center;
+      font-size: smaller;
+    }
+
+    /*sets the padding for the top and bottom of containers. 
+    It also sets the maximum width for containers to different sizes based on the screen size using media queries.*/
+    .container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        max-width: 750px;
+      }
+    }
+
+
+    @media (min-width: 992px) {
+      .container {
+        max-width: 970px;
+      }
+    }
+
+    /*sets the font size for the content of the pop up window*/
+    .modal-body {
+      font-size: 12px;
+    }
+
+    @keyframes color-change {
+  0% {
+    color: #678C5D;
+  }
+  50% {
+    color: #5E8C7B;
+  }
+  100% {
+    color: #088C8C;
+  }
+}
+
+h3 {
+  animation: color-change 5s infinite;
+}
+
+  </style>
+</head>
+
+<body>
+  <section class="h-custom">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-lg-10 col-xl-6">
+          <div class="card rounded-3">
+            <img src="images/signup-image.png" class="w-95" alt="DALT Tech Logo" />
+            <div class="card-body p-md-5">
+              <h3 class="animate__animated animate__bounce">Sign Up!<br><br></h3>
+              <form novalidate action="signup.php" method="post">
+                <div class="form-outline mb-4">
+                  <input type="text" id="FirstName" class="form-control" required placeholder="John/Jane"/>
+                  <label class="form-label" for="FirstName">First Name</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="text" id="LastName" class="form-control" required placeholder="Doe"/>
+                  <label class="form-label" for="LastName">Last Name</label>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                      <input type="email" class="form-control" id="Email" required placeholder="name@example.com"/>
+                      <label class="form-label" for="Email">Email</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                      <input type="tel" class="form-control" id="PhoneNum" required placeholder="+501 *** ****"/>
+                      <label class="form-label" for="PhoneNum">Phone Number</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                      <input type="password" class="form-control" id="password" required placeholder="******"/>
+                      <label class="form-label" for="password">Password</label>
+                      <i class="bi bi-eye-slash" id="togglePassword"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                      <input type="password" class="form-control" id="confirmpassword" required placeholder="******"/>
+                      <label class="form-label" for="confirmpassword">Confirm Password</label>
+                      <i class="bi bi-eye-slash" id="toggleConfirmPassword"></i>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-success btn-lg mb-1">
+                  Sign Up
+                </button>
+              </form>
+              <div>
+                <p>
+                  <br />By clicking the Sign Up button, you agree to our
+                  <br />
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Terms
+                    and Conditions</button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Eligibility: By creating an account on our website, you confirm that you are at least 16 years
+                        old and are legally allowed to enter into a binding agreement with us. <br><br>
+
+                        Account Information: You are responsible for providing accurate and up-to-date information when
+                        creating your account, and for maintaining the confidentiality of your account information,
+                        including your password. <br><br>
+
+                        Content: You are solely responsible for any content that you make available on our website. You
+                        agree to not upload any content that is illegal, offensive, or violates the rights of any third
+                        party. <br><br>
+
+                        Intellectual Property: Our website contains proprietary content and intellectual property,
+                        including trademarks, copyrights, and trade secrets. You agree to not copy, distribute, or
+                        reproduce any of our content without our express written permission. <br><br>
+
+                        Governing Law: These terms and conditions shall be governed by and construed in accordance with
+                        the laws of Belize. <br><br>
+
+                        By clicking sign up to our website, you agree to these terms and conditions in their entirety.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </p>
+                <p>
+                  Already have an account?
+                  <a href="login.html">Login here.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script>
+  // Get the elements for the password and confirm password fields and the eye icons
+  const togglePassword = document.querySelector('#togglePassword');
+  const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
+  const password = document.querySelector('#password');
+  const confirmPassword = document.querySelector('#confirmpassword');
+
+  // Add event listener to the toggle password eye icon
+  togglePassword.addEventListener('click', () => {
+    // Toggle the password field type attribute between 'password' and 'text'
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // Toggle the eye icons between the closed and open eye icons
+    togglePassword.classList.toggle('bi-eye-slash');
+    togglePassword.classList.toggle('bi-eye');
+  });
+
+  // Add event listener to the toggle confirm password eye icon
+  toggleConfirmPassword.addEventListener('click', () => {
+    // Toggle the confirm password field type attribute between 'password' and 'text'
+    const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+    confirmPassword.setAttribute('type', type);
+    // Toggle the eye icons between the closed and open eye icons
+    toggleConfirmPassword.classList.toggle('bi-eye-slash');
+    toggleConfirmPassword.classList.toggle('bi-eye');
+  });
+</script>
+<!-- Popper.js library for Bootstrap 5 -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<!-- Bootstrap 5 alpha JavaScript library -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+
+</html>
