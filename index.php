@@ -62,8 +62,8 @@
 
       <div class="d-flex carousel-nav">
         <a href="#" class="col active">Greenhouse Tracker</a>
-        <a href="#" class="col">Map</a>
         <a href="#" class="col">About Us</a>
+        <a href="#" class="col">Map</a>
       </div>
 
 
@@ -85,6 +85,20 @@
 
         <div class="media-29101 d-md-flex w-100">
           <div class="img">
+            <img src="https://greenearthlandscapeonline.com/wp-content/uploads/2019/06/aboutus.jpeg" alt="Image" class="img-fluid">
+          </div>
+          <div class="text">
+            <a class="category d-block mb-4" href="#">By DALT TECH</a>
+            <h2>About Us</h2>
+            <p>Dalt Tech is a cutting-edge greenhouse tracking company that leverages the latest technology to help farmers optimize their greenhouse operations.
+              Our team of experts is dedicated to providing innovative solutions that enable growers to monitor and analyze critical data points such as temperature, humidity, and CO2 levels.
+              With our state-of-the-art sensors and intuitive software, farmers can make informed decisions to futher manage their greenhouses.
+              At Dalt Tech, we are committed to promoting sustainable agriculture practices and empowering farmers with the tools they need to succeed in an ever-changing industry.</p>
+          </div>
+        </div> <!-- .item -->
+
+        <div class="media-29101 d-md-flex w-100">
+          <div class="img">
             <a href="map.php">
             <img src="images/other-map.jpg" alt="Map of Belize" class="img-fluid">
           </a>
@@ -94,20 +108,6 @@
             <h2><a href="map.php">Map<a></h2>
             <p>Click the map! This is an interactive map which shows your current facilities in all the districts, which you have requested.
               With just one click you can see the status of all your greenhouses scattered across Belize.</p>
-          </div>
-        </div> <!-- .item -->
-
-        <div class="media-29101 d-md-flex w-100">
-          <div class="img">
-            <img src="images/hero_3.jpg" alt="Image" class="img-fluid">
-          </div>
-          <div class="text">
-            <a class="category d-block mb-4" href="#">By DALT TECH</a>
-            <h2>About Us</h2>
-            <p>Dalt Tech is a cutting-edge greenhouse tracking company that leverages the latest technology to help farmers optimize their greenhouse operations.
-              Our team of experts is dedicated to providing innovative solutions that enable growers to monitor and analyze critical data points such as temperature, humidity, and CO2 levels.
-              With our state-of-the-art sensors and intuitive software, farmers can make informed decisions to futher manage their greenhouses.
-              At Dalt Tech, we are committed to promoting sustainable agriculture practices and empowering farmers with the tools they need to succeed in an ever-changing industry.</p>
           </div>
         </div> <!-- .item -->
 
