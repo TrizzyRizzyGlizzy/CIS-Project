@@ -107,7 +107,7 @@ h5 {
   <div class="container-fluid-lg">
     <section class="vh-100 d-flex justify-content-center align-items-center" style="background-image: url('images/home-page.png');">
       <div class="text-center">
-        <h1 class = "fade-in-h">GREENHOUSE TRACKER</h1>
+        <h1 class = "fade-in-h">GREENHOUSE gay</h1>
       </div>
     </section>
 
