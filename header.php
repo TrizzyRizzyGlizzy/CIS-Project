@@ -14,9 +14,9 @@
 </head>
 <header>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
   <div class="container">
-    <a class="navbar-brand" href="index.php">Dalt Tech</a>
+    <a class="navbar-brand fs-1" href="index.php">Dalt Tech</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

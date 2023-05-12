@@ -21,5 +21,4 @@ include('header.php');
   <area alt="" title="" href="emptyfacility.php" coords="110,207,40" shape="circle">
 </map>
 </body>
-
 </html>
