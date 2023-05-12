@@ -45,21 +45,6 @@
   font-size: 16px;
 }
 
-@media only screen and (max-width: 600px) {
-			nav li {
-				display: block;
-				margin: 10px;
-			}
-			
-			nav {
-				padding: 5px;
-			}
-			
-			header {
-				padding: 10px;
-			}
-		}
-
     body{
       background-color: #038c73;
     }
@@ -86,7 +71,7 @@
 
         <div class="media-29101 d-md-flex w-100">
           <div class="img">
-            <img src="images/home-page.png" alt="Image" class="img-fluid">
+            <img src="images/home-page.png" alt="Plant Background" class="img-fluid">
           </div>
           <div class="text">
             <a class="category d-block mb-4" href="#">By DALT TECH</a>
@@ -100,12 +85,14 @@
 
         <div class="media-29101 d-md-flex w-100">
           <div class="img">
-            <img src="images/map.png" alt="Image" class="img-fluid" style="width: 148px; height: 213px;">
+            <a href="map.php">
+            <img src="images/other-map.jpg" alt="Map of Belize" class="img-fluid">
+          </a>
           </div>
           <div class="text">
             <a class="category d-block mb-4" href="#">By DALT TECH</a>
-            <h2>Map</h2>
-            <p>This is an interactive map which shows your current facilities in all the districts, which you have requested.
+            <h2><a href="map.php">Map<a></h2>
+            <p>Click the map! This is an interactive map which shows your current facilities in all the districts, which you have requested.
               With just one click you can see the status of all your greenhouses scattered across Belize.</p>
           </div>
         </div> <!-- .item -->

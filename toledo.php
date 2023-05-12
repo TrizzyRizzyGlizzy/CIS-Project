@@ -6,7 +6,6 @@ include('header.php');
 
 <head>
     <title>Toldeo Facilities</title>
-    <link rel="stylesheet" href="style2.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
     <script>
 
