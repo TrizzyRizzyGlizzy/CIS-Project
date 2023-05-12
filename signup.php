@@ -1,30 +1,29 @@
 <?php
+  include("connection.php");
 
-    /*include("connection.php");
-if($_SERVER['REQUEST_METHOD'] == "POST") {
-    //check if post from forms was used
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  
+  // Get form data and sanitize inputs
+  $first_name = $_POST['first_name'];
+  $last_name = $_POST['last_name'];
+  $email = $_POST['email'];
+  $phone = $_POST['phone'];
+  $password = $_POST['password'];
 
-    //read database
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+  // Insert data into table
+  $sql = "INSERT INTO account (f_name, l_name, email, phone, password)
+          VALUES ('$first_name', '$last_name', '$email', '$phone', '$password')";
+  if ($con->query($sql) === TRUE) {
+    // Redirect to home page
+    header("Location: index.php");
+    exit();
+  } else {
+    echo "Error: " . $sql . "<br>" . $con->error;
+  }
+  
+  error_reporting(E_ALL);
+  ini_set('display_errors', 1);
+}
 
-        //check email is correct
-        $query = "select * from users where User_Email = '$email' limit 1";
-        $result = mysqli_query($con, $query);
-
-        //if email correct, check password
-        if($result) {
-            if($result && mysqli_num_rows($result) > 0) {
-                $user_data = mysqli_fetch_assoc($result);
-                if($user_data['User_Password'] === $password) {
-                    $_SESSION['user_id'] = $user_data['user_id'];
-                    header("Location: index.php");
-                    die;
-                }
-            }
-        }
-        echo "Invalid email or password!";
-
-    }*/
-    header("location: index.php");
 ?>

@@ -79,23 +79,23 @@ h3 {
               <h3 class="animate__animated animate__bounce">Sign Up!<br><br></h3>
               <form novalidate action="signup.php" method="post">
                 <div class="form-outline mb-4">
-                  <input type="text" id="FirstName" class="form-control" required placeholder="John/Jane"/>
+                  <input type="text" id="FirstName" class="form-control" name="first_name" required placeholder="John/Jane"/>
                   <label class="form-label" for="FirstName">First Name</label>
                 </div>
                 <div class="form-outline mb-4">
-                  <input type="text" id="LastName" class="form-control" required placeholder="Doe"/>
+                  <input type="text" id="LastName" class="form-control" name="last_name" required placeholder="Doe"/>
                   <label class="form-label" for="LastName">Last Name</label>
                 </div>
                 <div class="row mb-4">
                   <div class="col-md-6">
                     <div class="form-outline">
-                      <input type="email" class="form-control" id="Email" required placeholder="name@example.com"/>
+                      <input type="email" class="form-control" id="Email" name="email" required placeholder="name@example.com"/>
                       <label class="form-label" for="Email">Email</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-outline">
-                      <input type="tel" class="form-control" id="PhoneNum" required placeholder="+501 *** ****"/>
+                      <input type="tel" class="form-control" id="PhoneNum" name="phone" required placeholder="+501 *** ****"/>
                       <label class="form-label" for="PhoneNum">Phone Number</label>
                     </div>
                   </div>
@@ -103,7 +103,7 @@ h3 {
                 <div class="row mb-4">
                   <div class="col-md-6">
                     <div class="form-outline">
-                      <input type="password" class="form-control" id="password" required placeholder="******"/>
+                      <input type="password" class="form-control" id="password" name="password" required placeholder="******"/>
                       <label class="form-label" for="password">Password</label>
                       <i class="bi bi-eye-slash" id="togglePassword"></i>
                     </div>

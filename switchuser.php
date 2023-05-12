@@ -124,7 +124,5 @@ closeBtn.onclick = function() {
   modal.style.display = "none";
 }
 </script>
-
-	
 </body>
 </html>

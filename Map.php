@@ -62,7 +62,7 @@
       <div class="row">
         <div class="col-md-6">
           <div id="image-container" style="margin: auto;">
-            <img src="images/map.png" usemap="#image_map">
+            <img src="images/map_full.png" usemap="#image_map">
             <map name="image_map">
               <area alt="Facility Corozal" title="Facility Corozal" href="facility.php" coords="461,61,28" shape="circle">
               <area alt="Facility Orange Walk" title="Facility Orange Walk" href="facility.php" coords="270,224,24" shape="circle">
