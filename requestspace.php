@@ -9,10 +9,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Plant Information</title>
+	<title>Request Space Form</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
 	<style>
-		.container {
+		.container1 {
 			border: 2px solid gray;
 			padding: 20px;
 			margin: auto;
@@ -22,6 +22,7 @@
 		}
         h1{
             text-align: center;
+            color: white;
         }
 
         body{
@@ -31,7 +32,7 @@
 </head>
 <body>
     <h1>Request Space Form</h1>
-<div class="container">
+<div class="container1 rounded bg-white border border-gray">
   <form>
     <div class="mb-3">
       <label for="district-select" class="form-label">District</label>
@@ -67,6 +68,6 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
 </html>

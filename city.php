@@ -6,10 +6,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
     <script>
 
-
-
-
-
     </script>
      <?php
 include('header.php');
