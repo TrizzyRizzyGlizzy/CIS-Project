@@ -4,54 +4,32 @@
   include('header.php');
   ?>
 </header>
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <link rel="stylesheet" href="style2.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <style>
-.fade-in-h{
-  font-family: 'Courier Newk';
-  opacity: 0;
-  transition: opacity 3s ease-in-out;
-  color: white;
-  text-shadow:
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;  
-}
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
 
-.fade-in {
-  opacity: 1;
-}
+    <link rel="stylesheet" href="css/animate.css">
 
-    section {
-   background-size: cover;
-   background-position: center;
-   background-attachment: scroll;
-   margin: 0;
-   padding: 0;
-    }
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style_index.css">
 
-    .square-box {
-    width: 500px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #038c73;
-    color: white;
-  }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 
-  .footer {
+    <style>
+        .footer {
   background-color: #f8f9fa;
   border-top: 1px solid #e9ecef;
   font-size: 14px;
@@ -82,87 +60,91 @@
 			}
 		}
 
-    @keyframes color-change {
-  0% {
-    color: #678C5D;
-  }
-  50% {
-    color: #5E8C7B;
-  }
-  100% {
-    color: #088C8C;
-  }
-}
+    body{
+      background-color: #038c73;
+    }
 
-h5 {
-  animation: color-change 5s infinite;
-}
-  </style>
-</head>
+    </style>
 
+    <title>DALT TECH</title>
+  </head>
+  <body>
+  
 
+  <div class="content">
+    
+    <div class="container rounded" style="background-color: white;">
 
-<body>
-
-  <div class="container-fluid-lg">
-    <section class="vh-100 d-flex justify-content-center align-items-center" style="background-image: url('images/home-page.png');">
-      <div class="text-center">
-        <h1 class = "fade-in-h">GREENHOUSE gay</h1>
+      <div class="d-flex carousel-nav">
+        <a href="#" class="col active">Greenhouse Tracker</a>
+        <a href="#" class="col">Map</a>
+        <a href="#" class="col">About Us</a>
       </div>
-    </section>
 
-    <section class="vh-100 d-flex justify-content-center align-items-center" >
-  <div class="p-5 bg-#038c73 border border-gray rounded-0 square-box" style="background-color: #038c73;">
-    <h1>About Us</h1>
-    <p>
-      Dalt Tech is a cutting-edge greenhouse tracking company that leverages the latest technology to help farmers optimize their greenhouse operations.
-      Our team of experts is dedicated to providing innovative solutions that enable growers to monitor and analyze critical data points such as temperature, humidity, and CO2 levels.
-      With our state-of-the-art sensors and intuitive software, farmers can make informed decisions to futher manage their greenhouses.
-      At Dalt Tech, we are committed to promoting sustainable agriculture practices and empowering farmers with the tools they need to succeed in an ever-changing industry.
-    </p>
+
+      <div class="owl-carousel owl-1">
+
+        <div class="media-29101 d-md-flex w-100">
+          <div class="img">
+            <img src="images/home-page.png" alt="Image" class="img-fluid">
+          </div>
+          <div class="text">
+            <a class="category d-block mb-4" href="#">By DALT TECH</a>
+            <h2>About Greenhouse Tracker</h2>
+            <p>Greenhouse Tracker is a billing and tracking platform that is meant for management and access
+              to the distribution of space within a greenhouse facility. While Greenhouse Tracker offers its services for individual customers
+              like gardeners, our target demographic is small to medium sized businesses like farms and
+              botanists keeping track of their greenhouses and plants.</p>
+          </div>
+        </div> <!-- .item -->
+
+        <div class="media-29101 d-md-flex w-100">
+          <div class="img">
+            <img src="images/map.png" alt="Image" class="img-fluid" style="width: 148px; height: 213px;">
+          </div>
+          <div class="text">
+            <a class="category d-block mb-4" href="#">By DALT TECH</a>
+            <h2>Map</h2>
+            <p>This is an interactive map which shows your current facilities in all the districts, which you have requested.
+              With just one click you can see the status of all your greenhouses scattered across Belize.</p>
+          </div>
+        </div> <!-- .item -->
+
+        <div class="media-29101 d-md-flex w-100">
+          <div class="img">
+            <img src="images/hero_3.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="text">
+            <a class="category d-block mb-4" href="#">By DALT TECH</a>
+            <h2>About Us</h2>
+            <p>Dalt Tech is a cutting-edge greenhouse tracking company that leverages the latest technology to help farmers optimize their greenhouse operations.
+              Our team of experts is dedicated to providing innovative solutions that enable growers to monitor and analyze critical data points such as temperature, humidity, and CO2 levels.
+              With our state-of-the-art sensors and intuitive software, farmers can make informed decisions to futher manage their greenhouses.
+              At Dalt Tech, we are committed to promoting sustainable agriculture practices and empowering farmers with the tools they need to succeed in an ever-changing industry.</p>
+          </div>
+        </div> <!-- .item -->
+
+      </div>
+    </div>
   </div>
-</section>
 
-<section class="vh-100 d-flex justify-content-center align-items-center" style="background-color: #038c73;">
-  <div class="p-5 bg-#038c73 border border-gray rounded-0 square-box" style="background-color: white; color: black;">
-    <h1>Map</h1>
-    <p class="text-md-left">
-      This is an interactive map which shows your current facilities in all the districts, which you have requested.
-      With just one click you can see the status of all your greenhouses scattered across Belize.
-    </p>
-    <h5>Click the Map!</h5>
-    <a href="Map.php">
-      <img class="rounded float-right" src="images/map.png" width="150px">
-    </a>
-  </div>
-</section>
-
-  </body>
   <footer class="footer py-3">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <i class="fa fa-align-center" aria-hidden="true">
-          <p>© 2023 DALT Tech. All rights reserved. Address: Princess Margrett Drive, Belize City, Belize.</p> 
+          <p>Â© 2023 DALT Tech. All rights reserved. Address: Princess Margrett Drive, Belize City, Belize.</p> 
           <p>Phone: 456-7890  Email: DaltTech@gmail.com</p>
         </i>
       </div>
     </div>
   </div>
 </footer>
-<script>
-  const headings = document.querySelectorAll('.fade-in-h');
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('fade-in');
-    }
-  });
-});
-
-headings.forEach((heading) => {
-  observer.observe(heading);
-});
-</script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
