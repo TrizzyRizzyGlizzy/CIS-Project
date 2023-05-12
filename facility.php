@@ -25,6 +25,10 @@
             text-align: center;
 			background-color: white;
 		}
+
+		body{
+			background-color: #038c73;
+		}
 	</style>
 </head>
 <body>
