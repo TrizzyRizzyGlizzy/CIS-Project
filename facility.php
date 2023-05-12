@@ -12,7 +12,7 @@
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
 	<style>
-		.container {
+		.container1 {
 			border: 2px solid gray;
 			padding: 20px;
 			margin: auto;
@@ -20,10 +20,14 @@
 			width: 50%;
             text-align: center;
 		}
+
+		body{
+			background-color: #038c73;
+		}
 	</style>
 </head>
 <body>
-	<div class="container">
+	<div class="container1">
 		<h1>FSC 01</h1>
         <p>Facility Information: <strong>200sqft</strong></p>
 		<p>Planet Species: <strong>Silybum marianum</strong></p>
@@ -36,10 +40,8 @@
         <p>Plant Fertilizer: <strong>Gay Rass 1</strong></p>
         <p>Plant Sunlight: <strong>5 hours</strong></p>
         <p>Plant Water: <strong>2 Liters Daily</strong></p>
-        <img src="images\logo_clear_with_name.png" class="img-fluid">
+        <img src="images\logo.png" class="img-fluid">
 	</div>
 	
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -68,6 +68,5 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

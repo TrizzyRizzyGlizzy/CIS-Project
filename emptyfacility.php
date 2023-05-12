@@ -7,7 +7,7 @@
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
 	<style>
-		.container {
+		.container1 {
 			border: 2px solid gray;
 			padding: 20px;
 			margin: auto;
@@ -15,13 +15,17 @@
 			width: 50%;
             text-align: center;
 		}
+
+		body{
+			background-color: #038c73;
+		}
 	</style>
     <?php
 include('header.php');
 ?>
 </head>
 <body>
-	<div class="container">
+	<div class="container1">
 		<h1>FSC 01</h1>
         <p>Facility Information: <strong>N/A</strong></p>
 		<p>Planet Species: <strong>N/A</strong></p>
@@ -34,9 +38,8 @@ include('header.php');
         <p>Plant Fertilizer: <strong>N/A</strong></p>
         <p>Plant Sunlight: <strong>N/A</strong></p>
         <p>Plant Water: <strong>N/A</strong></p>
+		<img src="images\logo.png" class="img-fluid">
 	</div>
 	
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
 </body>
 </html>
