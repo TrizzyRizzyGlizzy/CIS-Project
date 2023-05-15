@@ -1,3 +1,8 @@
+<header>
+<?php
+	include('header.php');
+?>
+</header>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,9 +31,6 @@
 			background-color: #038c73;
 		}
 	</style>
-	<?php
-	include('header.php');
-	?>
 </head>
 
 <body>

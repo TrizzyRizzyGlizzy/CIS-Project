@@ -1,8 +1,8 @@
+<?php include('check_login.php'); ?>
 <!DOCTYPE html>
 <html>
-
 <head>
-  
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
@@ -121,7 +121,7 @@
             <li><a class="dropdown-item" href="billing.php">Billing Info</a></li>
             <li><a class="dropdown-item" href="requestspace.php">Request Space</a></li>
             <li><a class="dropdown-item" onclick="document.getElementById('user-modal').style.display='block'">Switch User</a></li>
-            <li><a class="dropdown-item" href="login.html">Log Out</a></li>
+            <li><a class="dropdown-item" href="logout.php">Log Out</a></li>
           </ul>
         </li>
       </ul>
@@ -167,12 +167,30 @@
         <!-- Add more users as needed -->
       </div>
       <div class="user-info ">
-        <a href="signup.php" >
+        <a onclick="document.getElementById('switch-modal').style.display='block'" >
           <h3>Add User</h3>
         </a>
       </div>
     </div>
   </div>
+</div>
+
+<div id="switch-modal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="container">
+    <h1>Create New User</h1>
+    <form action="create_user.php" method="post">
+      <div class="mb-3">
+        <label for="username" class="form-label">Username:</label>
+        <input type="text" class="form-control" id="username" name="username" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Create New User</button>
+    </form>
+  </div>
+  </div>
+</div>
 <!-- JavaScript to close the modal when the user clicks outside of it or on the close button -->
 <script>
 var modal = document.getElementById('user-modal');

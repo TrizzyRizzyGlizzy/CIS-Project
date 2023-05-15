@@ -1,3 +1,8 @@
+<header>
+<?php
+include('header.php');
+?>
+</header>
 <!DOCTYPE html>
 <html>
 
@@ -9,9 +14,7 @@
 
 
     </script>
-     <?php
-include('header.php');
-?>
+
 </head>
 <body>
 <img src="images/cayo.png" usemap="#image_map">

@@ -10,7 +10,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Request Space Form</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style_index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<style>
 		.container1 {
 			border: 2px solid gray;
@@ -54,12 +69,22 @@
       <div class="invalid-feedback">Please enter a valid email address.</div>
     </div>
     <div class="mb-3">
-      <label for="space-input" class="form-label">Space required</label>
-      <div class="input-group">
-        <input type="number" class="form-control" id="space-input" min="1" max="1000" required>
-        <span class="input-group-text">sq. ft.</span>
+    <div class="container">
+    <h1>Range Slider Example</h1>
+    <form>
+      <div class="form-group">
+        <label for="rangeSelect">Select a Range:</label>
+        <select class="form-select" id="rangeSelect">
+          <option value="0-100">0-100</option>
+          <option value="100-1000">100-1000</option>
+          <option value="1000-3000">1000-3000</option>
+        </select>
       </div>
-      <div class="invalid-feedback">Please enter a number between 1 and 1000.</div>
+      <div class="form-group">
+        <label for="slider">Slider:</label>
+        <input type="range" class="form-range" id="slider">
+        <p id="sliderValue">Slider Value: <span id="sliderOutput"></span></p>
+      </div>
     </div>
     <div class="mb-3">
       <label for="notes-input" class="form-label">Extra Specifications</label>
@@ -68,5 +93,26 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
+<script>
+    const rangeSelect = document.getElementById('rangeSelect');
+    const slider = document.getElementById('slider');
+    const sliderOutput = document.getElementById('sliderOutput');
+
+    rangeSelect.addEventListener('change', () => {
+      const selectedRange = rangeSelect.value.split('-');
+      const min = parseInt(selectedRange[0]);
+      const max = parseInt(selectedRange[1]);
+      const step = (max - min <= 100) ? 10 : 100; // Choose step size based on range
+      slider.min = min;
+      slider.max = max;
+      slider.step = step;
+      slider.value = min;
+      sliderOutput.textContent = min;
+    });
+
+    slider.addEventListener('input', () => {
+      sliderOutput.textContent = slider.value;
+    });
+  </script>
 </body>
 </html>

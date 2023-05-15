@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           VALUES ('$first_name', '$last_name', '$email', '$phone', '$password')";
   if ($con->query($sql) === TRUE) {
     // Redirect to home page
-    header("Location: index.php");
+    header("Location: login.php");
     exit();
   } else {
     echo "Error: " . $sql . "<br>" . $con->error;
