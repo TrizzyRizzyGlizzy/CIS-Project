@@ -1,4 +1,11 @@
-<?php include('check_login.php'); ?>
+<?php include('check_login.php'); 
+      // Retrieve the account_id from the session
+      $account_id = $_SESSION['account_id'];
+
+      // Retrieve the user_id and user_name from the database
+      $query = "SELECT user_id, user_name FROM users WHERE account_id = '$account_id'";
+      $result = mysqli_query($con, $query);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -129,9 +136,6 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
-    
-  
-      
     </div>
   </div>
 </nav>
@@ -145,26 +149,24 @@
     <div class="text-center">
       <h1 class="h1" >Switch User</h1>
       <div class="user-list ">
-        <div class="user">
-          <i class="bi bi-person-fill" ></i>
-          <div class="user-info">
-            <h3 >User 1</h3>
-          </div>
-          <a  href="index.php" >
-            <button type="button">Switch</button>
-          </a>
-        </div>
-        <br>
-        <div class="user">
-          <i class="bi bi-person-fill"></i>
-          <div class="user-info">
-            <h3>User 2</h3>
-          </div>
-          <a  href="index.php">
-            <button type="button">Switch</button>
-          </a>
-        </div>
-        <!-- Add more users as needed -->
+        <?php
+if (mysqli_num_rows($result) > 0) {
+  // Iterate through each row and display the user_name as a button
+  while ($row = mysqli_fetch_assoc($result)) {
+    $user_id = $row['user_id'];
+    $user_name = $row['user_name'];
+    
+    // Display the user_name as a button
+    echo "<div class='user'>";
+    echo "<i class='bi bi-person-fill' ></i>";
+    echo "<button onclick=\"setUserID($user_id)\">$user_name</button>";
+    echo "</div>";
+    echo "<br>";
+  }
+} else {
+  echo "No users found.";
+}
+?>
       </div>
       <div class="user-info ">
         <a onclick="document.getElementById('switch-modal').style.display='block'" >

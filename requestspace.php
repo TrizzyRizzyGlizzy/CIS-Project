@@ -53,27 +53,27 @@
       <label for="district-select" class="form-label">District</label>
       <select class="form-select" id="district-select" required>
         <option value="">Select a district</option>
-        <option value="Belize">Belize</option>
-        <option value="Orange Walk">Orange Walk</option>
-        <option value="Cayo">Cayo</option>
-        <option value="Toledo">Toledo</option>
-        <option value="Stann Creek">Stann Creek</option>
         <option value="Corozal">Corozal</option>
+        <option value="ow">Orange Walk</option>
+        <option value="bz">Belize</option>
+        <option value="cy">Cayo</option>
+        <option value="Stann Creek">Stann Creek</option>
+        <option value="Toledo">Toledo</option>
       </select>
       <div class="invalid-feedback">Please select a district.</div>
     </div>
     <div class="mb-3">
       <label for="email-input" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="email-input" aria-describedby="email-help" placeholder="DaltTech@gmail.com" required>
+      <input type="email" name="email" class="form-control" id="email-input" aria-describedby="email-help" placeholder="DaltTech@gmail.com" required>
       <div id="email-help" class="form-text">We'll never share your email with anyone else.</div>
       <div class="invalid-feedback">Please enter a valid email address.</div>
     </div>
     <div class="mb-3">
     <div class="container">
-    <h1>Range Slider Example</h1>
+    <h2>Amount of Space Needed</h2>
     <form>
       <div class="form-group">
-        <label for="rangeSelect">Select a Range:</label>
+        <label for="rangeSelect">Select a Range for the Amount of Space Needed in Square Feet:</label>
         <select class="form-select" id="rangeSelect">
           <option value="0-100">0-100</option>
           <option value="100-1000">100-1000</option>
@@ -81,9 +81,8 @@
         </select>
       </div>
       <div class="form-group">
-        <label for="slider">Slider:</label>
         <input type="range" class="form-range" id="slider">
-        <p id="sliderValue">Slider Value: <span id="sliderOutput"></span></p>
+        <p id="sliderValue">Space Needed: <span id="sliderOutput"></span> sq. ft.</p>
       </div>
     </div>
     <div class="mb-3">
